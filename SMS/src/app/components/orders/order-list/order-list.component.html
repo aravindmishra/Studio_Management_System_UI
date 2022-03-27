@@ -1,0 +1,96 @@
+<div class="main order-form">
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8"><h3 class="page-title">Order Details</h3></div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-warning align-right" (click)="filterBlock = !filterBlock"><i class="fa fa-filter"></i> Filter</button>
+                </div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-primary align-right"><i class="fa fa-plus"></i> Add</button>
+                </div>
+            </div>
+            </div>
+            <!-- Filter -->
+            <div class="row" *ngIf="filterBlock">
+                <div class="col-md-2"></div>
+                <div class="col-md-10">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <input type="date" class="form-control align-right" placeholder="Mobile No.">
+                                </div>
+                                <div class="col-md-5">
+                                    <input type="date" class="form-control align-right" placeholder="Mobile No.">
+                                </div>
+                                <div class="col-md-2">
+                                    <button type="button" class="btn btn-success align-right"> Apply</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- List -->
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- TABLE HOVER -->
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-md-9"><h3 class="panel-title">Orders</h3></div>
+                               
+                                <div class="col-md-3">
+                                    <input type="text" class="form-control" placeholder="Search..">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Date</th>
+                                        <th>Name</th>
+                                        <th>Mobile No.</th>
+                                        <th>Type</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Steve</td>
+                                        <td>Jobs</td>
+                                        <td>@steve</td>
+                                        <td>@steve</td>
+                                        <td>@steve</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Simon</td>
+                                        <td>Philips</td>
+                                        <td>@simon</td>
+                                        <td>@steve</td>
+                                        <td>@steve</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Jane</td>
+                                        <td>Doe</td>
+                                        <td>@jane</td>
+                                        <td>@steve</td>
+                                        <td>@steve</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- END TABLE HOVER -->
+                </div>
+            </div>
+
